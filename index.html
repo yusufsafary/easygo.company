@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EasyGo Company | Global Financial Markets</title>
+  <meta name="description" content="EasyGo Company offers world-class trading on Forex, Stocks, Indices, Commodities and Crypto with competitive spreads and advanced platforms." />
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <div class="container nav-inner">
+      <a href="index.html" class="logo">
+        <span class="logo-icon">&#9651;</span>
+        <span class="logo-text">EasyGo<span class="logo-accent">.</span></span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#markets">Markets</a></li>
+        <li><a href="#platforms">Platforms</a></li>
+        <li><a href="#why">Why Us</a></li>
+        <li><a href="#accounts">Accounts</a></li>
+        <li><a href="#about">About</a></li>
+      </ul>
+      <div class="nav-actions">
+        <a href="#" class="btn btn-outline">Log In</a>
+        <a href="#" class="btn btn-primary">Open Account</a>
+      </div>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="hero-bg">
+      <div class="hero-grid"></div>
+      <div class="hero-glow glow-1"></div>
+      <div class="hero-glow glow-2"></div>
+    </div>
+    <div class="container hero-inner">
+      <div class="hero-badge">Regulated &amp; Trusted Globally</div>
+      <h1 class="hero-title">Trade the World's<br /><span class="gradient-text">Financial Markets</span></h1>
+      <p class="hero-sub">Access 1000+ instruments across Forex, Stocks, Indices, Commodities and Crypto — all from one powerful platform with ultra-tight spreads.</p>
+      <div class="hero-cta">
+        <a href="#" class="btn btn-primary btn-lg">Start Trading Free</a>
+        <a href="#platforms" class="btn btn-ghost btn-lg">Explore Platforms</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat"><span class="stat-num">1M+</span><span class="stat-label">Active Traders</span></div>
+        <div class="stat-divider"></div>
+        <div class="stat"><span class="stat-num">150+</span><span class="stat-label">Countries Served</span></div>
+        <div class="stat-divider"></div>
+        <div class="stat"><span class="stat-num">$2B+</span><span class="stat-label">Daily Volume</span></div>
+        <div class="stat-divider"></div>
+        <div class="stat"><span class="stat-num">0.0</span><span class="stat-label">Pips Spread</span></div>
+      </div>
+    </div>
+    <div class="ticker-bar">
+      <div class="ticker-track" id="ticker"></div>
+    </div>
+  </section>
+
+  <!-- MARKETS -->
+  <section class="section markets" id="markets">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-badge">Markets</div>
+        <h2 class="section-title">Trade 1000+ Instruments</h2>
+        <p class="section-sub">Diversify your portfolio across the world's most liquid markets, available 24/5.</p>
+      </div>
+      <div class="markets-grid">
+        <div class="market-card">
+          <div class="market-icon forex">&#128201;</div>
+          <h3>Forex</h3>
+          <p>Trade 60+ major, minor and exotic currency pairs with raw spreads from 0.0 pips.</p>
+          <ul class="market-pairs">
+            <li><span>EUR/USD</span><span class="up">+0.12%</span></li>
+            <li><span>GBP/USD</span><span class="down">-0.08%</span></li>
+            <li><span>USD/JPY</span><span class="up">+0.21%</span></li>
+          </ul>
+        </div>
+        <div class="market-card">
+          <div class="market-icon stocks">&#128200;</div>
+          <h3>Stocks &amp; ETFs</h3>
+          <p>Access 500+ global company shares and ETFs with real-time pricing and no commissions.</p>
+          <ul class="market-pairs">
+            <li><span>Apple (AAPL)</span><span class="up">+1.34%</span></li>
+            <li><span>Tesla (TSLA)</span><span class="down">-0.56%</span></li>
+            <li><span>Amazon (AMZN)</span><span class="up">+0.88%</span></li>
+          </ul>
+        </div>
+        <div class="market-card">
+          <div class="market-icon indices">&#128202;</div>
+          <h3>Indices</h3>
+          <p>Trade CFDs on 30+ global indices including S&amp;P 500, NASDAQ, FTSE 100 and more.</p>
+          <ul class="market-pairs">
+            <li><span>S&amp;P 500</span><span class="up">+0.45%</span></li>
+            <li><span>NASDAQ</span><span class="up">+0.72%</span></li>
+            <li><span>FTSE 100</span><span class="down">-0.19%</span></li>
+          </ul>
+        </div>
+        <div class="market-card">
+          <div class="market-icon commodities">&#129683;</div>
+          <h3>Commodities</h3>
+          <p>Invest in Gold, Silver, Oil, Gas and 20+ agricultural commodities with competitive rates.</p>
+          <ul class="market-pairs">
+            <li><span>Gold (XAU/USD)</span><span class="up">+0.31%</span></li>
+            <li><span>Crude Oil (WTI)</span><span class="down">-0.65%</span></li>
+            <li><span>Silver (XAG/USD)</span><span class="up">+0.18%</span></li>
+          </ul>
+        </div>
+        <div class="market-card">
+          <div class="market-icon crypto">&#8383;</div>
+          <h3>Crypto</h3>
+          <p>Trade Bitcoin, Ethereum and 100+ altcoins as CFDs — no wallet required, 24/7 access.</p>
+          <ul class="market-pairs">
+            <li><span>BTC/USD</span><span class="up">+2.41%</span></li>
+            <li><span>ETH/USD</span><span class="up">+1.87%</span></li>
+            <li><span>XRP/USD</span><span class="down">-0.33%</span></li>
+          </ul>
+        </div>
+        <div class="market-card market-card-cta">
+          <div class="market-icon all">+</div>
+          <h3>All Markets</h3>
+          <p>Browse the full list of 1000+ instruments available on the EasyGo platform.</p>
+          <a href="#" class="btn btn-primary mt-auto">View All Markets</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PLATFORMS -->
+  <section class="section platforms dark-section" id="platforms">
+    <div class="container">
+      <div class="section-header light">
+        <div class="section-badge">Platforms</div>
+        <h2 class="section-title">Trading Tools Built for Everyone</h2>
+        <p class="section-sub">From beginner to professional — EasyGo has the right platform for your trading style.</p>
+      </div>
+      <div class="platforms-grid">
+        <div class="platform-card featured">
+          <div class="platform-label">Most Popular</div>
+          <div class="platform-icon">&#128187;</div>
+          <h3>EasyGo WebTrader</h3>
+          <p>A browser-based platform with advanced charting, 80+ indicators, and one-click trading. No download required.</p>
+          <ul class="platform-features">
+            <li>&#10003; 80+ Technical Indicators</li>
+            <li>&#10003; Real-time Streaming Quotes</li>
+            <li>&#10003; One-Click Order Execution</li>
+            <li>&#10003; Risk Management Tools</li>
+          </ul>
+          <a href="#" class="btn btn-primary">Launch Platform</a>
+        </div>
+        <div class="platform-card">
+          <div class="platform-icon">&#128241;</div>
+          <h3>Mobile App</h3>
+          <p>Trade anywhere with the EasyGo mobile app for iOS and Android — full functionality in your pocket.</p>
+          <ul class="platform-features">
+            <li>&#10003; Push Notifications &amp; Alerts</li>
+            <li>&#10003; Biometric Login</li>
+            <li>&#10003; Live Charts &amp; Analysis</li>
+            <li>&#10003; Instant Deposits</li>
+          </ul>
+          <a href="#" class="btn btn-outline-dark">Download App</a>
+        </div>
+        <div class="platform-card">
+          <div class="platform-icon">&#9881;</div>
+          <h3>MetaTrader 5</h3>
+          <p>Connect EasyGo to MetaTrader 5 — the industry standard platform for expert traders and algo systems.</p>
+          <ul class="platform-features">
+            <li>&#10003; Expert Advisors (EA)</li>
+            <li>&#10003; Strategy Backtesting</li>
+            <li>&#10003; VPS Hosting Available</li>
+            <li>&#10003; Algorithmic Trading</li>
+          </ul>
+          <a href="#" class="btn btn-outline-dark">Get MT5</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY US -->
+  <section class="section why" id="why">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-badge">Why EasyGo</div>
+        <h2 class="section-title">The Edge Every Trader Deserves</h2>
+        <p class="section-sub">We combine institutional-grade infrastructure with a trader-first experience.</p>
+      </div>
+      <div class="why-grid">
+        <div class="why-card">
+          <div class="why-num">01</div>
+          <h3>Tight Spreads</h3>
+          <p>Raw spreads from 0.0 pips on major pairs. No hidden fees. Transparent pricing you can trust.</p>
+        </div>
+        <div class="why-card">
+          <div class="why-num">02</div>
+          <h3>Fast Execution</h3>
+          <p>Order execution under 30ms with our Tier-1 liquidity providers and co-located servers.</p>
+        </div>
+        <div class="why-card">
+          <div class="why-num">03</div>
+          <h3>Regulated &amp; Safe</h3>
+          <p>Licensed by top-tier regulators. Client funds held in segregated accounts at major banks.</p>
+        </div>
+        <div class="why-card">
+          <div class="why-num">04</div>
+          <h3>24/5 Support</h3>
+          <p>Dedicated multilingual support via live chat, phone and email — whenever you need us.</p>
+        </div>
+        <div class="why-card">
+          <div class="why-num">05</div>
+          <h3>High Leverage</h3>
+          <p>Up to 1:500 leverage on select instruments. Trade bigger with the same capital.</p>
+        </div>
+        <div class="why-card">
+          <div class="why-num">06</div>
+          <h3>Free Education</h3>
+          <p>Webinars, tutorials, market analysis and a complete trading academy — all free for clients.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ACCOUNTS -->
+  <section class="section accounts dark-section" id="accounts">
+    <div class="container">
+      <div class="section-header light">
+        <div class="section-badge">Account Types</div>
+        <h2 class="section-title">Choose Your Account</h2>
+        <p class="section-sub">Flexible account types to suit every trading style and experience level.</p>
+      </div>
+      <div class="accounts-grid">
+        <div class="account-card">
+          <div class="account-tier">Standard</div>
+          <div class="account-deposit">$100 <span>min. deposit</span></div>
+          <ul class="account-features">
+            <li>Spreads from 1.2 pips</li>
+            <li>No commission</li>
+            <li>Leverage up to 1:200</li>
+            <li>All markets access</li>
+            <li>WebTrader &amp; Mobile</li>
+          </ul>
+          <a href="#" class="btn btn-outline-dark">Open Standard</a>
+        </div>
+        <div class="account-card featured">
+          <div class="account-popular">Most Popular</div>
+          <div class="account-tier">Pro</div>
+          <div class="account-deposit">$500 <span>min. deposit</span></div>
+          <ul class="account-features">
+            <li>Raw spreads from 0.0 pips</li>
+            <li>$3.5 commission/lot</li>
+            <li>Leverage up to 1:400</li>
+            <li>Priority execution</li>
+            <li>MT5 + All Platforms</li>
+            <li>Dedicated account manager</li>
+          </ul>
+          <a href="#" class="btn btn-primary">Open Pro Account</a>
+        </div>
+        <div class="account-card">
+          <div class="account-tier">VIP</div>
+          <div class="account-deposit">$10,000 <span>min. deposit</span></div>
+          <ul class="account-features">
+            <li>Ultra-tight spreads</li>
+            <li>$1.5 commission/lot</li>
+            <li>Leverage up to 1:500</li>
+            <li>VPS hosting included</li>
+            <li>All platforms &amp; API</li>
+            <li>Personal relationship manager</li>
+            <li>Weekly market insights</li>
+          </ul>
+          <a href="#" class="btn btn-outline-dark">Contact Sales</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT / TRUST -->
+  <section class="section trust" id="about">
+    <div class="container trust-inner">
+      <div class="trust-content">
+        <div class="section-badge">About EasyGo</div>
+        <h2 class="section-title">Built on Trust, Driven by Technology</h2>
+        <p>Founded in 2015, EasyGo Company has grown into a globally recognized brokerage serving over 1 million traders in 150+ countries. We combine cutting-edge technology with a relentless focus on trader success.</p>
+        <p>Our team of 500+ professionals operates across offices in London, Singapore, Dubai and Sydney — ensuring round-the-clock service and market coverage.</p>
+        <div class="trust-badges">
+          <div class="trust-badge">&#127981; FCA Regulated</div>
+          <div class="trust-badge">&#128274; SSL Secured</div>
+          <div class="trust-badge">&#128179; Segregated Funds</div>
+          <div class="trust-badge">&#127942; Award-Winning</div>
+        </div>
+        <a href="#" class="btn btn-primary mt-auto">Learn More About Us</a>
+      </div>
+      <div class="trust-visual">
+        <div class="trust-map">
+          <svg viewBox="0 0 600 320" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+                <stop offset="0%" stop-color="#3b82f6" stop-opacity="0.3"/>
+                <stop offset="100%" stop-color="#3b82f6" stop-opacity="0"/>
+              </radialGradient>
+            </defs>
+            <rect width="600" height="320" fill="transparent"/>
+            <!-- Simplified world outlines -->
+            <path d="M60,80 Q120,60 180,80 Q200,90 220,80 Q240,70 260,85 Q290,100 300,90 Q320,78 340,85 Q360,92 380,80 Q410,65 440,80 Q470,95 500,80 Q530,65 550,80 L550,160 Q500,175 460,160 Q430,148 400,165 Q370,180 340,165 Q310,150 280,165 Q250,180 220,165 Q190,150 160,165 Q130,180 100,165 Q70,150 60,160 Z" fill="#1e3a5f" opacity="0.4"/>
+            <path d="M80,165 Q130,155 160,170 Q200,185 240,170 Q280,155 320,170 Q360,185 400,170 Q440,155 480,170 Q510,182 540,170 L540,250 Q490,265 440,250 Q390,235 340,250 Q290,265 240,250 Q190,235 140,250 Q100,262 80,250 Z" fill="#1e3a5f" opacity="0.3"/>
+            <!-- Dots for offices -->
+            <circle cx="290" cy="110" r="6" fill="#3b82f6" opacity="0.9">
+              <animate attributeName="r" values="6;10;6" dur="2s" repeatCount="indefinite"/>
+              <animate attributeName="opacity" values="0.9;0.4;0.9" dur="2s" repeatCount="indefinite"/>
+            </circle>
+            <circle cx="420" cy="130" r="6" fill="#60a5fa" opacity="0.9">
+              <animate attributeName="r" values="6;10;6" dur="2.5s" repeatCount="indefinite"/>
+              <animate attributeName="opacity" values="0.9;0.4;0.9" dur="2.5s" repeatCount="indefinite"/>
+            </circle>
+            <circle cx="490" cy="175" r="6" fill="#93c5fd" opacity="0.9">
+              <animate attributeName="r" values="6;10;6" dur="3s" repeatCount="indefinite"/>
+              <animate attributeName="opacity" values="0.9;0.4;0.9" dur="3s" repeatCount="indefinite"/>
+            </circle>
+            <circle cx="350" cy="95" r="6" fill="#60a5fa" opacity="0.9">
+              <animate attributeName="r" values="6;10;6" dur="1.8s" repeatCount="indefinite"/>
+              <animate attributeName="opacity" values="0.9;0.4;0.9" dur="1.8s" repeatCount="indefinite"/>
+            </circle>
+            <text x="300" y="295" text-anchor="middle" fill="#60a5fa" font-size="12" font-family="Inter,sans-serif">Global Presence — 150+ Countries</text>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA BAND -->
+  <section class="cta-band">
+    <div class="container cta-band-inner">
+      <div>
+        <h2>Ready to Start Trading?</h2>
+        <p>Open a free account in under 3 minutes. No hidden fees.</p>
+      </div>
+      <div class="cta-band-actions">
+        <a href="#" class="btn btn-primary btn-lg">Open Live Account</a>
+        <a href="#" class="btn btn-ghost btn-lg">Try Demo Free</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <a href="index.html" class="logo">
+          <span class="logo-icon">&#9651;</span>
+          <span class="logo-text">EasyGo<span class="logo-accent">.</span></span>
+        </a>
+        <p>Your gateway to global financial markets. Trade smarter with EasyGo Company.</p>
+        <div class="footer-socials">
+          <a href="#" aria-label="Twitter">&#120143;</a>
+          <a href="#" aria-label="Facebook">f</a>
+          <a href="#" aria-label="LinkedIn">in</a>
+          <a href="#" aria-label="Instagram">&#9706;</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Markets</h4>
+        <ul>
+          <li><a href="#">Forex</a></li>
+          <li><a href="#">Stocks &amp; ETFs</a></li>
+          <li><a href="#">Indices</a></li>
+          <li><a href="#">Commodities</a></li>
+          <li><a href="#">Crypto</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Platforms</h4>
+        <ul>
+          <li><a href="#">WebTrader</a></li>
+          <li><a href="#">Mobile App</a></li>
+          <li><a href="#">MetaTrader 5</a></li>
+          <li><a href="#">VPS Hosting</a></li>
+          <li><a href="#">Trading API</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Regulation</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Press</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Support</h4>
+        <ul>
+          <li><a href="#">Help Centre</a></li>
+          <li><a href="#">Trading Education</a></li>
+          <li><a href="#">Market Analysis</a></li>
+          <li><a href="#">Economic Calendar</a></li>
+          <li><a href="#">Legal Documents</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <p>&#169; 2025 EasyGo Company Ltd. All rights reserved.</p>
+        <p class="risk-warning"><strong>Risk Warning:</strong> Trading in financial instruments involves a high level of risk to your capital. Only trade with money you can afford to lose. EasyGo Company Ltd is regulated and authorized under applicable financial regulations. Past performance is not indicative of future results.</p>
+        <div class="footer-legal-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Risk Disclosure</a>
+          <a href="#">Cookie Policy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
