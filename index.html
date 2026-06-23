@@ -27,10 +27,6 @@
         <li><a href="#why">Why Us</a></li>
         <li><a href="#accounts">Accounts</a></li>
         <li><a href="#about">About</a></li>
-        <li class="nav-mobile-actions">
-          <a href="#" class="btn btn-outline-dark">Log In</a>
-          <a href="#" class="btn btn-primary">Open Account</a>
-        </li>
       </ul>
       <div class="nav-actions">
         <a href="#" class="btn btn-outline">Log In</a>
@@ -41,6 +37,21 @@
       </button>
     </div>
   </nav>
+
+  <!-- MOBILE DRAWER -->
+  <div class="mobile-drawer" id="mobileDrawer">
+    <ul class="drawer-links">
+      <li><a href="#markets">Markets</a></li>
+      <li><a href="#platforms">Platforms</a></li>
+      <li><a href="#why">Why Us</a></li>
+      <li><a href="#accounts">Accounts</a></li>
+      <li><a href="#about">About</a></li>
+    </ul>
+    <div class="drawer-actions">
+      <a href="#" class="btn btn-outline-dark">Log In</a>
+      <a href="#" class="btn btn-primary">Open Free Account</a>
+    </div>
+  </div>
 
   <!-- HERO -->
   <section class="hero" id="home">
@@ -315,22 +326,10 @@
             <rect width="600" height="320" fill="transparent"/>
             <path d="M60,80 Q120,60 180,80 Q200,90 220,80 Q240,70 260,85 Q290,100 300,90 Q320,78 340,85 Q360,92 380,80 Q410,65 440,80 Q470,95 500,80 Q530,65 550,80 L550,160 Q500,175 460,160 Q430,148 400,165 Q370,180 340,165 Q310,150 280,165 Q250,180 220,165 Q190,150 160,165 Q130,180 100,165 Q70,150 60,160 Z" fill="#1e3a5f" opacity="0.4"/>
             <path d="M80,165 Q130,155 160,170 Q200,185 240,170 Q280,155 320,170 Q360,185 400,170 Q440,155 480,170 Q510,182 540,170 L540,250 Q490,265 440,250 Q390,235 340,250 Q290,265 240,250 Q190,235 140,250 Q100,262 80,250 Z" fill="#1e3a5f" opacity="0.3"/>
-            <circle cx="290" cy="110" r="6" fill="#3b82f6" opacity="0.9">
-              <animate attributeName="r" values="6;10;6" dur="2s" repeatCount="indefinite"/>
-              <animate attributeName="opacity" values="0.9;0.4;0.9" dur="2s" repeatCount="indefinite"/>
-            </circle>
-            <circle cx="420" cy="130" r="6" fill="#60a5fa" opacity="0.9">
-              <animate attributeName="r" values="6;10;6" dur="2.5s" repeatCount="indefinite"/>
-              <animate attributeName="opacity" values="0.9;0.4;0.9" dur="2.5s" repeatCount="indefinite"/>
-            </circle>
-            <circle cx="490" cy="175" r="6" fill="#93c5fd" opacity="0.9">
-              <animate attributeName="r" values="6;10;6" dur="3s" repeatCount="indefinite"/>
-              <animate attributeName="opacity" values="0.9;0.4;0.9" dur="3s" repeatCount="indefinite"/>
-            </circle>
-            <circle cx="350" cy="95" r="6" fill="#60a5fa" opacity="0.9">
-              <animate attributeName="r" values="6;10;6" dur="1.8s" repeatCount="indefinite"/>
-              <animate attributeName="opacity" values="0.9;0.4;0.9" dur="1.8s" repeatCount="indefinite"/>
-            </circle>
+            <circle cx="290" cy="110" r="6" fill="#3b82f6" opacity="0.9"><animate attributeName="r" values="6;10;6" dur="2s" repeatCount="indefinite"/><animate attributeName="opacity" values="0.9;0.4;0.9" dur="2s" repeatCount="indefinite"/></circle>
+            <circle cx="420" cy="130" r="6" fill="#60a5fa" opacity="0.9"><animate attributeName="r" values="6;10;6" dur="2.5s" repeatCount="indefinite"/><animate attributeName="opacity" values="0.9;0.4;0.9" dur="2.5s" repeatCount="indefinite"/></circle>
+            <circle cx="490" cy="175" r="6" fill="#93c5fd" opacity="0.9"><animate attributeName="r" values="6;10;6" dur="3s" repeatCount="indefinite"/><animate attributeName="opacity" values="0.9;0.4;0.9" dur="3s" repeatCount="indefinite"/></circle>
+            <circle cx="350" cy="95" r="6" fill="#60a5fa" opacity="0.9"><animate attributeName="r" values="6;10;6" dur="1.8s" repeatCount="indefinite"/><animate attributeName="opacity" values="0.9;0.4;0.9" dur="1.8s" repeatCount="indefinite"/></circle>
             <text x="300" y="295" text-anchor="middle" fill="#60a5fa" font-size="12" font-family="Inter,sans-serif">Global Presence in 150+ Countries</text>
           </svg>
         </div>
@@ -354,63 +353,78 @@
 
   <!-- FOOTER -->
   <footer class="footer">
-    <div class="container footer-inner">
-      <div class="footer-brand">
-        <a href="index.html" class="logo">
-          <span class="logo-icon">&#9651;</span>
-          <span class="logo-text">EasyGo<span class="logo-accent">.</span></span>
-        </a>
-        <p>Your gateway to global financial markets. Trade smarter with EasyGo Company.</p>
-        <div class="footer-socials">
-          <a href="#" aria-label="Twitter">&#120143;</a>
-          <a href="#" aria-label="Facebook">f</a>
-          <a href="#" aria-label="LinkedIn">in</a>
-          <a href="#" aria-label="Instagram">&#9706;</a>
+    <div class="container">
+
+      <!-- Brand row -->
+      <div class="footer-brand-row">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">
+            <span class="logo-icon">&#9651;</span>
+            <span class="logo-text">EasyGo<span class="logo-accent">.</span></span>
+          </a>
+          <p>Your gateway to global financial markets. Trade smarter with EasyGo Company.</p>
+          <div class="footer-socials">
+            <a href="#" aria-label="Twitter">&#120143;</a>
+            <a href="#" aria-label="Facebook">f</a>
+            <a href="#" aria-label="LinkedIn">in</a>
+            <a href="#" aria-label="Instagram">&#9706;</a>
+          </div>
+        </div>
+        <div class="footer-tagline">
+          <p>Trusted by 1M+ traders worldwide.</p>
+          <a href="#" class="btn btn-primary">Open Free Account</a>
         </div>
       </div>
-      <div class="footer-col">
-        <h4>Markets</h4>
-        <ul>
-          <li><a href="#">Forex</a></li>
-          <li><a href="#">Stocks &amp; ETFs</a></li>
-          <li><a href="#">Indices</a></li>
-          <li><a href="#">Commodities</a></li>
-          <li><a href="#">Crypto</a></li>
-        </ul>
+
+      <!-- Links grid -->
+      <div class="footer-links-grid">
+        <div class="footer-col">
+          <h4>Markets</h4>
+          <ul>
+            <li><a href="#">Forex</a></li>
+            <li><a href="#">Stocks &amp; ETFs</a></li>
+            <li><a href="#">Indices</a></li>
+            <li><a href="#">Commodities</a></li>
+            <li><a href="#">Crypto</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Platforms</h4>
+          <ul>
+            <li><a href="#">WebTrader</a></li>
+            <li><a href="#">Mobile App</a></li>
+            <li><a href="#">MetaTrader 5</a></li>
+            <li><a href="#">VPS Hosting</a></li>
+            <li><a href="#">Trading API</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Regulation</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Press</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Support</h4>
+          <ul>
+            <li><a href="#">Help Centre</a></li>
+            <li><a href="#">Trading Education</a></li>
+            <li><a href="#">Market Analysis</a></li>
+            <li><a href="#">Economic Calendar</a></li>
+            <li><a href="#">Legal Documents</a></li>
+          </ul>
+        </div>
       </div>
-      <div class="footer-col">
-        <h4>Platforms</h4>
-        <ul>
-          <li><a href="#">WebTrader</a></li>
-          <li><a href="#">Mobile App</a></li>
-          <li><a href="#">MetaTrader 5</a></li>
-          <li><a href="#">VPS Hosting</a></li>
-          <li><a href="#">Trading API</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <h4>Company</h4>
-        <ul>
-          <li><a href="#">About Us</a></li>
-          <li><a href="#">Regulation</a></li>
-          <li><a href="#">Careers</a></li>
-          <li><a href="#">Press</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <h4>Support</h4>
-        <ul>
-          <li><a href="#">Help Centre</a></li>
-          <li><a href="#">Trading Education</a></li>
-          <li><a href="#">Market Analysis</a></li>
-          <li><a href="#">Economic Calendar</a></li>
-          <li><a href="#">Legal Documents</a></li>
-        </ul>
-      </div>
+
     </div>
+
+    <!-- Footer bottom -->
     <div class="footer-bottom">
-      <div class="container">
+      <div class="container footer-bottom-inner">
         <p>&#169; 2026 EasyGo Company Ltd. All rights reserved.</p>
         <p class="risk-warning"><strong>Risk Warning:</strong> Trading in financial instruments involves a high level of risk to your capital. Only trade with money you can afford to lose. EasyGo Company Ltd is regulated and authorized under applicable financial regulations. Past performance is not indicative of future results.</p>
         <div class="footer-legal-links">
